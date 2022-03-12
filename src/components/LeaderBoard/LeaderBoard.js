@@ -63,7 +63,9 @@ const Score = ({ member }) => {
 // Its an array and we sort high to low.
 const transformedData = tournamentMembers.slice().sort((a, b) => getScores(b) - getScores(a));
 
-
+// getScores() adds the result
+// Scores() is just for printing if its plural or not.
+// use helper function of getScores to get a single number, and then sort from high to low.
 const Leaderboard = () => {
 
     return (
