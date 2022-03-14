@@ -1,4 +1,5 @@
 import './App.css';
+import Greeting from './components/Greeting/Greeting';
 import Leaderboard from './components/LeaderBoard/LeaderBoard';
 
 function App() {
@@ -8,6 +9,10 @@ function App() {
         <h1>Playground</h1>
       </header>
       <Leaderboard />
+      <Greeting key={key} />
+      <button onClick={() => setKey(makeKey)}>
+        Reset Greeting.js Component
+      </button>
     </>
   );
 }
